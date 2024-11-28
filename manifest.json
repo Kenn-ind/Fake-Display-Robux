@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Fake Bobux",
+  "version": "2.0.15",
+  "description": "This tool is intended for entertainment purposes and should not be used to deceive or harm other players.",
+  "host_permissions": ["*://*.roblox.com/", "*://*/*"],
+  "permissions": ["storage", "cookies"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "48": "icon.png"
+    }
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
